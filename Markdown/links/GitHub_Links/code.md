@@ -1,21 +1,23 @@
 # Linking Code
 
 **A Single Line**
+
 1. Click on Line-Number  
-![](first.png)
+![Click on Line-Number](pics/first.png)
 2. Click an 'Copy permalink'  
-![](second.png)
+![Click an 'Copy permalink'](pics/second.png)
 3. Paste it to your Issue-Comment
 
 ---
 
 **Multi-Line**
+
 1. Click on start Line-Number  
-![](first.png)
+![Click on start Line-Number](pics/first.png)
 1. Shift + Click on end Line-Number  
-![](third.png)
+![Shift + Click on end Line-Number](pics/third.png)
 1. Click an 'Copy permalink'  
-![](fourth.png)
+![Click an 'Copy permalink'](pics/fourth.png)
 1. Paste it to your Issue-Comment
 
 **Output**
