@@ -4,12 +4,14 @@
 
 `sample.syntax(<arg1>, <arg2> )`
 
+**return**: return-info
+
 - short description
 
-[Link to arg1](#)
+[Link to arg1](#)  
 [Link to arg2](#)
 
-[Examples](#)
+[Examples](#example)
 
 ---
 
