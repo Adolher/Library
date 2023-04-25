@@ -2,7 +2,17 @@
 
 # Count
 
-`{ count: {} }`
+```mongoDB
+db.<collection>.aggregate([
+    {
+        <stage>:
+        {
+            <field>: <expression>,
+            <field>: { $count: {} }
+        }
+    }
+])
+```
 
 **return**: number of Documents in a group
 

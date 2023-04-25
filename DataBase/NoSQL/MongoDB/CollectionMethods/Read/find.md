@@ -1,28 +1,29 @@
-# Find Documents
+<sup>[MongoDB Docs .find()](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/)</sup>
+
+# Find
+
+```mongoDB
+db.<collection>.find(
+    <query>,
+    <projection>,
+    <options>
+)
+```
+
+**return**: a curser to the documents that match the query
+
+- find documents
+- (optional) projection: specifies the fields to return
+- (optional) options: specifies options for the query
+  - [Find Options](https://mongodb.github.io/node-mongodb-native/4.0//interfaces/findoptions.html)
+
+[Example](https://www.mongodb.com/docs/manual/reference/method/db.collection.find/#example)
 
 ---
 
-**Find All**
+## Projection
 
-`db.<collection>.find()`
-
----
-
-**Find Document with query**
-
-`db.<collection>.find( <query> )`
-
----
-
-**Find Document with projection**
-
-`db.<collection>.find( <query>, <projection> )`
-
----
-
-**\<projection>**
-
-```mongodb
+```mongoDB
 {
     <field1>: <value>,
     "<field2>.<sub_field>": <value>,

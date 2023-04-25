@@ -2,7 +2,19 @@
 
 # Count
 
-`{ $count: <string> }`
+```mongoDB
+db.<collection>.aggregate([
+    {
+        <stage>:
+        {
+            <field>: <expression>
+        }
+    },
+    {
+        $count: <string>
+    }
+])
+```
 
 **return**: count documents in a aggregation pipeline and assigns the value to \<string>
 

@@ -1,33 +1,9 @@
+<sup>[MongoDB Docs .aggregate()](https://www.mongodb.com/docs/manual/reference/method/db.collection.aggregate/)</sup>
+
 # Aggregate
 
-`db.<collection>.aggregate( <pipeline>, <options> )`  
-
-[MongoDB Documents](https://www.mongodb.com/docs/manual/reference/method/db.collection.aggregate/)
-
----
-
-**\<pipeline>**
-
-`[ { <stage1> }, { <stage2> } ]`
-
 ```mongoDB
-[
-    {
-        $stage1:
-        {
-            { <expression1> }
-        }
-        $stage2:
-        {
-            { <expression2> },
-            { <expression3> }
-        }
-    }
-]
-```
-
-```mongoDB
-[
+db.<collection>.aggregate([
     {
         $stage1:
         {
@@ -38,8 +14,16 @@
             { <agg_operator1>: <argument1> },
             { <agg_operator2>: [ <argument1>, <argument2> ] }
         }
-    }
-]
+    },
+    <options>
+])
 ```
+
+**return**: a corser for resulting documents or, if the pipeline includes $out or $merge, an empty curser
+
+- calculates aggregate values
+- (optional) options: [Options](https://www.mongodb.com/docs/manual/reference/method/db.collection.aggregate/#definition)
+
+[Example](https://www.mongodb.com/docs/manual/reference/method/db.collection.aggregate/#example)
 
 ---
